@@ -1,0 +1,148 @@
+# Kronos Blackhole – trackers.txt (enhanced)
+# Notes:
+# - Our matcher blocks exact domains and any subdomain (suffix match).
+# - Avoid wildcards like *.analytics — not used.
+# - Whitelist takes precedence.
+
+# --- Core Analytics / Telemetry (Google) ---
+google-analytics.com
+ssl.google-analytics.com
+analytics.google.com
+www.googletagmanager.com
+tagmanager.google.com
+googletagmanager.com
+firebase-settings.crashlytics.com
+firebaseinstallations.googleapis.com
+firebase.googleapis.com
+app-measurement.com
+app-measurement.net
+app-measurement.io
+crashlytics.com
+
+# --- Microsoft / App Insights / Crash ---
+dc.services.visualstudio.com
+rt.services.visualstudio.com
+in.appcenter.ms
+
+# --- Commercial APM / RUM / Logs ---
+mobile-collector.newrelic.com
+collector.newrelic.com
+bam.nr-data.net
+js-agent.newrelic.com
+api.rollbar.com
+notify.bugsnag.com
+sessions.bugsnag.com
+logs-01.loggly.com
+http-intake.logs.datadoghq.com
+rum-http-intake.logs.datadoghq.com
+api.datadoghq.com
+o255.ingest.sentry.io
+ingest.sentry.io
+sentry.io
+
+# --- Product Analytics (behavioral) ---
+api.mixpanel.com
+cdn.mxpnl.com
+decide.mixpanel.com
+segment.io
+api.segment.io
+amplitude.com
+api.amplitude.com
+heapanalytics.com
+cdn.heapanalytics.com
+api.heapanalytics.com
+posthog.com
+app.posthog.com
+eu.posthog.com
+us.posthog.com
+rudderlabs.com
+rudderstack.com
+plausible.io
+events.plausible.io
+cloudflareinsights.com
+static.cloudflareinsights.com
+stats.wp.com
+
+# --- Heatmaps / Session Replay ---
+hotjar.com
+static.hotjar.com
+script.hotjar.com
+insights.hotjar.com
+fullstory.com
+rs.fullstory.com
+smartlook.com
+rec.smartlook.com
+recorder.smartlook.com
+
+# --- Social Pixels / Tracking SDKs ---
+connect.facebook.net
+graph.facebook.com
+analytics.tiktok.com
+business-api.tiktok.com
+px.ads.linkedin.com
+snapads.com
+
+# --- Media watch-history / scrobblers ---
+trakt.tv
+api.trakt.tv
+simkl.com
+api.simkl.com
+anilist.co
+graphql.anilist.co
+api.anidb.net
+anidb.net
+api.myanimelist.net
+myanimelist.net
+kitsu.io
+api.kitsu.io
+
+# --- P2P DHT & Public Trackers (privacy risk) ---
+# (Blocking may reduce availability stats in P2P add-ons.)
+dht.transmissionbt.com
+router.bittorrent.com
+router.utorrent.com
+tracker.opentrackr.org
+tracker.torrent.eu.org
+openbittorrent.com
+tracker.openbittorrent.com
+opentracker.xyz
+bt.t-ru.org
+anidex.info
+
+# --- CDN Tracking / Counters ---
+static.chartbeat.com
+ping.chartbeat.net
+api2.branch.io
+api.branch.io
+cdn.branch.io
+tracking.fanart.tv
+collector-cdn.fanart.tv
+log.fanart.tv
+img.trackingtools.io
+
+# --- “Phone-home” / Counters often seen in add-ons ---
+counter.yadro.ru
+mc.yandex.ru
+hit.ua
+whos.amung.us
+hosted.whos.amung.us
+uptime.kodistats.me
+
+# --- Suspicious IP logger / leak-check hubs ---
+dnslogger.link
+dns.leakcheck.io
+track.adsvidcdn.com
+cdn.trackhub.live
+ads.exploitstream.net
+ads.streamhub.live
+
+# --- Add-on specific “surveillance” endpoints seen in the wild ---
+log-cdn.cumination.me
+stats.cumination.me
+cumcdn.tech
+track.watchnixtoon2.dev
+ping.watchnixtoon.org
+shadowtrack.watchnixtoon.com
+
+# --- End of list ---
+# Keep this file lean. If something breaks, move the domain to allow.txt (whitelist).

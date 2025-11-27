@@ -1,0 +1,30 @@
+# Required metadata APIs
+themoviedb.org
+api.themoviedb.org
+fanart.tv
+assets.fanart.tv
+image.tmdb.org
+
+# Media streaming / scraper domains Kronos uses
+musicmp3.ru
+mp3streams.ru
+watchnixtoon2.com
+otaku-streams.org
+elementum.surge.sh
+elementum.club
+anidex.info  # Only if used as a torrent source
+
+# GitHub resources (if you fetch from custom repos or update ZIPs)
+github.com
+raw.githubusercontent.com
+objects.githubusercontent.com
+
+# VPN and DNS sync services
+1.1.1.1
+cloudflare-dns.com
+dns.google
+
+# Kodi update and info services (optional)
+mirrors.kodi.tv
+kodi.tv
+addons.kodi.tv
